@@ -16,7 +16,10 @@
   "dependencies": {
     "@polymer/polymer": "next",
     "@webcomponents/webcomponentsjs": "^1.0.20",
-    "http-server": "^0.10.0"
+    "axios": "^0.17.1",
+    "chart.js": "^2.7.1",
+    "http-server": "^0.10.0",
+    "moment": "^2.19.3"
   },
   "devDependencies": {
     "postcss-html-loader": "^1.0.2",

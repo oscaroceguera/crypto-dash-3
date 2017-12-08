@@ -1,15 +1,22 @@
-<!-- <div>
-  <h1>Hola</h1>
-  <ul>
-    <li>BTC - Bitcoin- $12.00</li>
-    <li>ETH - Ethereum- $12.00</li>
-    <li>LTC - Litecoin- $12.00</li>
-  </ul>
-</div> -->
-
 <postcss src='style.postcss'></postcss>
 <div>
+  <h1 class='h1T'>Currency</h1>
+  <template is='dom-repeat' items='[[currencies]]'>
+    <li
+      class='item'
+      on-click='_getCurrencyHistoricData'
+      data-item$='[[item.code]]'
+    >
+      [[item.code]] - [[item.name]] $[[item.price]]
+    </li>
+  </template>
+  <div style='width: 100%; max-width:700px; margin: 0 auto'>
+    <canvas height="2" width="4" id="canvas"></canvas>
+  </div>
+</div>
+
+<!-- <div>
   <div class="test">
     AWESOME [[textContent]]
   </div>
-</div>
+</div> -->
